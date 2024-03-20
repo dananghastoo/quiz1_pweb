@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color with Button</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Warna latar belakang awal */
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .change-background-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* Styling untuk gambar di dalam tombol */
+        .change-background-btn img {
+            vertical-align: middle; /* Memastikan gambar berada di tengah */
+            margin-right: 5px; /* Jarak antara gambar dan teks */
+        }
+    </style>
+</head>
+<body>
+    <h1>Kuis 1 P WEB</h1>
+    <h1>Nama : Danang Hasto Munandar</h1>
+    <h1>Kelas : TIF 4B</h1>
+    <h1>Nim : 12250112560</h1>
+    <div class="button-container">
+        <!-- Tombol pertama dengan gambar -->
+        <button class="change-background-btn" onclick="changeBackgroundColor('#ff0000')">
+            <img src="baju6.jpg" height="200" width="200" alt="Red Icon">Red
+        </button>
+        <!-- Tombol kedua dengan gambar -->
+        <button class="change-background-btn" onclick="changeBackgroundColor('#00ff00')">
+            <img src="molten5000.png" height="200" width="200" alt="Green Icon">Green
+        </button>
+        <!-- Tombol ketiga dengan gambar -->
+        <button class="change-background-btn" onclick="changeBackgroundColor('#0000ff')">
+            <img src="netburnerbalistic.jpg" height="200" width="200" alt="Blue Icon">Blue
+        </button>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
